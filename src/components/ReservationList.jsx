@@ -57,7 +57,7 @@ class ReservationList extends Component {
               )}
 
               {this.state.reservations.map(reserv => (
-                <ListGroup.Item className="d-flex justify-content-between">
+                <ListGroup.Item key={reserv._id} className="d-flex justify-content-between">
                   <span>
                     {reserv.name} <strong>per {reserv.numberOfPeople}</strong>
                   </span>{" "}
